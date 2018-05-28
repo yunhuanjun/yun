@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/lightpink"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/back"/>
+
+    <TextView
+        android:id="@+id/title_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="完成"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

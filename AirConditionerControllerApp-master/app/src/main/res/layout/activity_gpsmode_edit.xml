@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a24442.air_conditioner.GPSModeEdit"
+    >
+
+    <include layout="@layout/title"></include>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/HomeLocation">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LocationText"
+            android:text="@string/locaton_text"/>
+
+        <EditText
+            android:id="@+id/LocationEdit"
+            android:layout_alignBaseline="@+id/LocationText"
+            android:layout_alignBottom="@+id/LocationText"
+            android:layout_marginLeft="100dp"
+            android:layout_width="220dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/OpenDis">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minLines="2"
+            android:id="@+id/OpenDisText"
+            android:text="@string/open_dist_text"/>
+
+        <EditText
+            android:id="@+id/OpenDisEdit"
+            android:layout_alignBaseline="@+id/OpenDisText"
+            android:layout_alignLeft="@+id/OpenDisText"
+            android:layout_marginLeft="100dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:digits="@string/digits"/>
+
+        <Spinner
+            android:layout_alignBaseline="@+id/OpenDisEdit"
+            android:layout_alignLeft="@+id/OpenDisEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/openLength"
+            android:layout_marginLeft="120dp"
+            android:entries="@array/lengths"></Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/CloseDis">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minLines="2"
+            android:id="@+id/CloseDisText"
+            android:text="@string/close_dist_text"/>
+
+        <EditText
+            android:id="@+id/CloseDisEdit"
+            android:layout_alignBaseline="@+id/CloseDisText"
+            android:layout_alignLeft="@+id/CloseDisText"
+            android:layout_marginLeft="100dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:digits="@string/digits"/>
+
+        <Spinner
+            android:layout_alignBaseline="@+id/CloseDisEdit"
+            android:layout_alignLeft="@+id/CloseDisEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/closeLength"
+            android:layout_marginLeft="120dp"
+            android:entries="@array/lengths"></Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/IdealTemp">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/IdealTempText"
+            android:text="@string/ideal_temp_text"/>
+
+        <EditText
+            android:id="@+id/IdealTempEdit"
+            android:layout_alignBaseline="@+id/IdealTempText"
+            android:layout_alignLeft="@+id/IdealTempText"
+            android:layout_marginLeft="100dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:digits="@string/digits"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="220dp"
+            android:text="°C"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/TempRange">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/TempRangeText"
+            android:text="@string/temp_range_text"/>
+
+        <EditText
+            android:id="@+id/TempRangeEdit1"
+            android:layout_alignBaseline="@+id/TempRangeText"
+            android:layout_alignLeft="@+id/TempRangeText"
+            android:layout_marginLeft="100dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:digits="@string/digits"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TempRangeText"
+            android:layout_alignBottom="@+id/TempRangeText"
+            android:layout_marginLeft="160dp"
+            android:text="°C  —— —— "/>
+
+        <EditText
+            android:id="@+id/TempRangeEdit2"
+            android:layout_alignBaseline="@+id/TempRangeText"
+            android:layout_alignLeft="@+id/TempRangeText"
+            android:layout_marginLeft="230dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:digits="@string/digits"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TempRangeText"
+            android:layout_alignBottom="@+id/TempRangeText"
+            android:layout_marginLeft="290dp"
+            android:text="°C"/>
+    </RelativeLayout>
+</LinearLayout>
+

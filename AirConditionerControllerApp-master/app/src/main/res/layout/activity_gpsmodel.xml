@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a24442.air_conditioner.GPSModelActivity"
+    >
+
+    <include layout="@layout/title"></include>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/HomeModel"
+            android:text="@string/locaton_text"/>
+
+        <TextView
+            android:id="@+id/HomeText"
+            android:layout_alignBaseline="@+id/HomeModel"
+            android:layout_alignBottom="@+id/HomeModel"
+            android:layout_marginLeft="100dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/default_edit"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minLines="2"
+            android:id="@+id/OpenModel"
+            android:text="@string/open_dist_text"/>
+
+        <TextView
+            android:id="@+id/OpenText"
+            android:layout_alignBaseline="@+id/OpenModel"
+            android:layout_alignBottom="@+id/OpenModel"
+            android:layout_marginLeft="100dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/default_edit"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minLines="2"
+            android:id="@+id/CloseModel"
+            android:text="@string/close_dist_text"/>
+
+        <TextView
+            android:id="@+id/CloseText"
+            android:layout_alignBaseline="@+id/CloseModel"
+            android:layout_alignBottom="@+id/CloseModel"
+            android:layout_marginLeft="100dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/default_edit"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ideal_temp_text"
+            android:id="@+id/IdealModel"/>
+
+        <TextView
+            android:id="@+id/IdealText"
+            android:layout_alignBaseline="@+id/IdealModel"
+            android:layout_alignBottom="@+id/IdealModel"
+            android:layout_marginLeft="100dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/default_edit"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/RangeModel"
+            android:text="@string/temp_range_text"/>
+
+        <TextView
+            android:id="@+id/RangeText"
+            android:layout_alignBaseline="@+id/RangeModel"
+            android:layout_alignBottom="@+id/RangeModel"
+            android:layout_marginLeft="100dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/default_edit"
+            />
+    </RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="digits">1234567890.</string>
+    <string name="locaton_text">家庭位置</string>
+    <string name="close_dist_text">自动开空调离家距离</string>
+    <string name="open_dist_text">自动关空调离家距离</string>
+    <string name="ideal_temp_text">理想温度</string>
+    <string name="temp_range_text">温度提醒范围</string>
+    <string name="default_edit">未设置</string>
+
+    <string name="openTime">总计空调开启时长</string>
+    <string name="electric">功耗耗电</string>
+    <string name="electricPrice">每度电价格</string>
+    <string name="electricCost">空调本月总计花费</string>
+    <string name="cost">本月日耗电趋势</string>
+
+    <string name="peopleMode">老人孩子模式</string>
+    <string name="tempatureMode">温度提醒模式</string>
+    <string name="customizeMode">自定义模式</string>
+    <string name="leaveMode">离家模式</string>
+
+    <string name="time_start">起始时间</string>
+    <string name="time_end">终止时间</string>
+    <string name="leave">关闭当前所有绑定的空调</string>
+
+    <string name="tempature">温度</string>
+    <string name="temp_unit">°C</string>
+    <string name="temp_text">当室内温度</string>
+
+    <string name="text_home">首页</string>
+    <string name="text_people">情景</string>
+    <string name="text_voice">语音</string>
+    <string name="text_location">定位</string>
+    <string name="text_text">报告</string>
+
+</resources>

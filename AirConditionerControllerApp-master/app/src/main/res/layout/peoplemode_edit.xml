@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/time_start"
+            android:id="@+id/peopleTimeStart1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" — "
+            android:id="@+id/peopleMid1"
+            android:layout_alignBaseline="@id/peopleTimeStart1"
+            android:layout_toEndOf="@id/peopleTimeStart1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/time_end"
+            android:id="@+id/peopleTimeEnd1"
+            android:layout_alignBaseline="@id/peopleTimeStart1"
+            android:layout_toEndOf="@id/peopleMid1"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/peopleTimeStart1"
+            android:hint="@string/tempature"
+            android:layout_marginLeft="25dp"
+            android:textSize="15dp"
+            android:layout_toEndOf="@id/peopleTimeEnd1"
+            android:id="@+id/peopleTemp1"
+            android:digits="@string/digits"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temp_unit"
+            android:textSize="15dp"
+            android:layout_alignBaseline="@id/peopleTimeStart1"
+            android:layout_toEndOf="@id/peopleTemp1"
+            android:id="@+id/people_unit1"/>
+        <Button
+            android:id="@+id/btPeople"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@id/people_unit1"
+            android:text="确定"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+

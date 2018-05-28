@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+        <Spinner
+            android:id="@+id/leaveDate"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/date"></Spinner>
+        <TextView
+            android:layout_alignBaseline="@id/leaveDate"
+            android:layout_toEndOf="@id/leaveDate"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/time_start"
+            android:id="@+id/leaveTimeStart"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" — "
+            android:id="@+id/mid1"
+            android:layout_alignBaseline="@id/leaveDate"
+            android:layout_toEndOf="@id/leaveTimeStart"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/time_end"
+            android:id="@+id/leaveTimeEnd"
+            android:layout_alignBaseline="@id/leaveDate"
+            android:layout_toEndOf="@id/mid1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/leave"
+            android:layout_marginLeft="25dp"
+            android:textSize="18dp"
+            android:id="@+id/leave"/>
+        <Button
+            android:id="@+id/btLeave"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="70dp"
+            android:layout_toEndOf="@id/leave"
+            android:text="确定"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+
